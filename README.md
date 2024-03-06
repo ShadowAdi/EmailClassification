@@ -1,7 +1,7 @@
 # **Email Classification Project**
 ## [Dataset Link](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset)
 
-## [Demo]()
+## [Demo](https://emailclassification-zsvhdksef7gwhntu8tecxw.streamlit.app/)
 
 ### **Description**
 > Introduction
