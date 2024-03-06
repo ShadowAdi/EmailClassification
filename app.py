@@ -3,7 +3,15 @@ import pickle
 import nltk
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
+
+
 ps=PorterStemmer()
+
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
+
 
 def load_pickle_file(file):
     with open(file, 'rb') as f:
@@ -50,8 +58,11 @@ btn=st.button("Predict")
 if btn:
     ans=VotingClassifier.predict(tfidfVectorizer.transform([text_preprocess(s1)]))[0]
 
-    
-    
+
+    try:
+        nltk.data.find('tokenizers/punkt')
+    except LookupError:
+        nltk.download('punkt')    
 
     if ans==0:
         st.subheader("Not Spam")
