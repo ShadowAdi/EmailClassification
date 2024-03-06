@@ -4,4 +4,5 @@ numpy
 seaborn
 matplotlib
 nltk
-WordCloud
+wordcloud
+scikit-learn
